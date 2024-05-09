@@ -10,9 +10,9 @@ export default function Layout({
         <div className="w-72 border-r border-slate-300 min-h-screen mr-4 pt-28">
             <div>
                 <SidebarItem href={"/dashboard"} icon={<HomeIcon />} title="Home" />
-                <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Transfer" />
+                <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Add money" />
                 <SidebarItem href={"/transactions"} icon={<TransactionsIcon />} title="Transactions" />
-                <SidebarItem href={"/p2p"} icon={<P2PTransferIcon />} title="P2P Transfer" />
+                <SidebarItem href={"/p2p"} icon={<P2PTransferIcon />} title="Send Money" />
             </div>
         </div>
             {children}
@@ -27,9 +27,10 @@ function HomeIcon() {
   </svg>
 }
 function TransferIcon() {
-    return <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+    return <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
   </svg>
+  
 }
 
 function TransactionsIcon() {
